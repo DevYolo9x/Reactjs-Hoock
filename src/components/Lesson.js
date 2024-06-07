@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-function Lesson() {
-    const listPages = this.props.list;
+function Lesson(props) {
+    const listPages = props.list;
     const itemPage = listPages.map( (item, index) =>
       <li key={index} className="list-group-item">{item}</li>
     )
